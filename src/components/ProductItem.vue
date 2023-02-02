@@ -1,6 +1,6 @@
 <template>
-    <div class="card">
-        <img :src="require('@/assets/' + image + '')" class="card-img-top" alt="...">
+    <div class="card mb-3">
+        <img :src="image" class="card-img-top img-fluid" alt="..." style="max-height: 250px;" >
         <div class="card-body">
             <div class="d-flex justify-content-between ">
                 <h5 class="card-title">{{ name }}</h5>

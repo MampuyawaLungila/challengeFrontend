@@ -7,6 +7,7 @@ import AboutComponent from './components/AboutComponent.vue'
 import CartComponent from './components/CartComponent.vue'
 import ContactComponent from './components/ContactComponent.vue'
 import Vuex from "vuex"
+import axios from "axios";
 import 'bootstrap/dist/css/bootstrap.css'
 
 Vue.config.productionTip = false
@@ -15,7 +16,7 @@ Vue.use(Vuex)
 
 const store = new Vuex.Store({
   state: {
-    produit: [],
+    produitData: [],
     Macart: [],
     
   },
@@ -23,7 +24,7 @@ const store = new Vuex.Store({
     ListProduit(state) {
       axios.get("https://fakestoreapi.com/products").then(
           function (response) {
-              state.products = response.data;
+              state.produitData = response.data;
               //console.log(response.data);
           }.bind(this)
       );
@@ -52,6 +53,7 @@ const router = new VueRouter({
 
 new Vue({
   router,
+  store,
   el: '#app',
   render: h => h(App)
 })
