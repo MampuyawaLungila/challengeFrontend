@@ -1,6 +1,6 @@
 <template>
-    <div class="card" style="width: 18rem;">
-        <img :src="image" class="card-img-top" alt="...">
+    <div class="card">
+        <img :src="require('@/assets/' + image + '')" class="card-img-top" alt="...">
         <div class="card-body">
             <div class="d-flex justify-content-between ">
                 <h5 class="card-title">{{ name }}</h5>
