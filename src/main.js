@@ -31,7 +31,7 @@ const store = new Vuex.Store({
 
   },
   AjoutCart(state,{pro}) {
-      state.cart.push(pro);
+      state.Macart.push(pro);
       console.log(pro);
 
   }

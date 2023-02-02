@@ -5,7 +5,10 @@
             <div class="d-flex justify-content-between ">
                 <h5 class="card-title">{{ name }}</h5>
                 <div></div>
+               
                 <svg xmlns="http://www.w3.org/2000/svg"
+                @click="ajoutCart(cartItem)"
+              
                 width="20px"
                     viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
                     <path
@@ -32,8 +35,22 @@ export default {
         image: String,
         name: String,
         category: String,
-        price: Number
-    }
+        price: Number,
+        cartItem:null
+       
+    },
+
+    methods: {
+        ajoutCart: function (pro) {
+      this.$store.commit('AjoutCart', { pro });
+
+    },
+  
+ 
+   
+ },
+
+
 
 }
 </script>
