@@ -77,7 +77,7 @@ export default {
     },
   },
   computed: {
-    cart() {
+    Macart() {
       return this.$store.state.Macart;
     },
   },
