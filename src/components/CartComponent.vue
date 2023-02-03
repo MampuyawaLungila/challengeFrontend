@@ -51,6 +51,48 @@
           </div>
         </div>
      </div>
+
+  <div class="col-md-3 order-2 mb-5 mb-md-0">
+        <div class="border p-4 rounded mb-4">
+          <h3 class="mb-3 h6 text-uppercase text-black d-block">Resumer de votre Cart ou Panier de commande</h3>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-1">
+              <a class="d-flex"
+                ><span>subTotal</span>
+                <span class="text-black ml-auto">{{ subTotal }}</span></a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="d-flex"
+                ><span>VAT</span>
+                <span class="text-black ml-auto">2,550</span></a
+              >
+            </li>
+            <li class="mb-1">
+              <a class="d-flex"
+                ><span>Total</span>
+                <span class="text-black ml-auto">{{ subTotal }}</span></a
+              >
+            </li>
+            <br />
+
+            <li class="mb-1">
+              <a class="d-flex"
+                ><span>Coupon</span> <input type="text" class="form-control"
+              /></a>
+            </li>
+            <br />
+
+            <li class="mb-1">
+              <input
+                type="submit"
+                class="btn btn-primary btn-lg btn-block"
+                value="Check-out"
+              />
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </template>
