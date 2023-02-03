@@ -1,7 +1,7 @@
 <template>
 
     <div class="container-sm taille-content border">
-        Bienvenu sur notre boutique en ligne
+        
     </div>
 
 </template>
@@ -9,6 +9,9 @@
 <script>
     export default{
         //name: SectionComponent,
+        props:{
+            msg:String
+        }
     }
 </script>
 

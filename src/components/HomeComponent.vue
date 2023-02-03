@@ -1,6 +1,6 @@
 <template>
     <div>
-       <SectionComponent />
+       <SectionComponent msg="Bienvenue sur notre boutique en ligne" />
        <FooterComponent />>
     </div>
 </template>
